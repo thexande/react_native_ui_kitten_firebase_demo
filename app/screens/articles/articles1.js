@@ -27,6 +27,7 @@ export class Articles1 extends React.Component {
   }
 
   componentDidMount() {
+    console.log("component did mount")
     this.ref = firebase.database().ref('cheers')
     this.ref.on('value', this.handleCheerUpdate)
   }
@@ -38,7 +39,8 @@ export class Articles1 extends React.Component {
   }
 
   handleCheerUpdate = (snapshot) => {
-  console.log(snapshot.val() || {})
+  console.log("now printing snap")
+  console.log(snapshot.val() || "empty snap")
 }
 
 
