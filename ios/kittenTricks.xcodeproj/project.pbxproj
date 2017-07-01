@@ -37,6 +37,7 @@
 		AE7B52F4A2534FDE808E7279 /* libRNSVG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E39931D467F462AA8F3A0F9 /* libRNSVG.a */; };
 		B04667CB1F073D7A0094190F /* libjschelpers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EAD1DF850E9000B6D8A /* libjschelpers.a */; };
 		B047561B1F07468A00C66C59 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B047561A1F07468A00C66C59 /* JavaScriptCore.framework */; };
+		B047565B1F074AD100C66C59 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B047565A1F074AD000C66C59 /* GoogleService-Info.plist */; };
 		D986882F55454954847CD201 /* Righteous-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE05BF1396DE44208CB86D27 /* Righteous-Regular.ttf */; };
 		F9B401A2CAE74266831C6A12 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D0C3BF3122D04DC7AC90E68E /* Roboto-Bold.ttf */; };
 /* End PBXBuildFile section */
@@ -304,6 +305,7 @@
 		AA429D7E1EEEA1C300A8EAA3 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		AAC252331EB328000080D1AC /* BVLinearGradient.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BVLinearGradient.xcodeproj; path = "../node_modules/react-native-linear-gradient/BVLinearGradient.xcodeproj"; sourceTree = "<group>"; };
 		B047561A1F07468A00C66C59 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		B047565A1F074AD000C66C59 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BE05BF1396DE44208CB86D27 /* Righteous-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Righteous-Regular.ttf"; path = "../app/assets/fonts/Righteous-Regular.ttf"; sourceTree = "<group>"; };
 		D0C3BF3122D04DC7AC90E68E /* Roboto-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Bold.ttf"; path = "../app/assets/fonts/Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		DF3C2F04A11B4235B5E4C91C /* icomoon.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = icomoon.ttf; path = ../app/assets/fonts/icomoon.ttf; sourceTree = "<group>"; };
@@ -406,6 +408,7 @@
 		13B07FAE1A68108700A75B9A /* kittenTricks */ = {
 			isa = PBXGroup;
 			children = (
+				B047565A1F074AD000C66C59 /* GoogleService-Info.plist */,
 				AA429D721EEEA09F00A8EAA3 /* RCTGoogleAnalyticsBridge.xcodeproj */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -932,6 +935,7 @@
 				9F88107143F445579359A95C /* Roboto-Light.ttf in Resources */,
 				55ECA45485394103A71F8065 /* Roboto-Medium.ttf in Resources */,
 				626D9749BDC742C78AD48CDC /* Roboto-Regular.ttf in Resources */,
+				B047565B1F074AD100C66C59 /* GoogleService-Info.plist in Resources */,
 				18165D7C46ED4165ABE7B8E2 /* fontawesome.ttf in Resources */,
 				D986882F55454954847CD201 /* Righteous-Regular.ttf in Resources */,
 			);
@@ -1051,7 +1055,12 @@
 					"\"$(SRCROOT)/kittenTricks\"",
 					"\"$(SRCROOT)/kittenTricks\"",
 				);
-				"LIBRARY_SEARCH_PATHS[arch=*]" = "$(inherited) \"$(SRCROOT)/kittenTricks\" \"$(SRCROOT)/kittenTricks\" \"$(SRCROOT)/kittenTricks\"";
+				"LIBRARY_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					"\"$(SRCROOT)/kittenTricks\"",
+					"\"$(SRCROOT)/kittenTricks\"",
+					"\"$(SRCROOT)/kittenTricks\"",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
