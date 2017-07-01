@@ -7,7 +7,7 @@ import {withRkTheme} from 'react-native-ui-kitten';
 import {AppRoutes} from './config/routesBuilder';
 import * as Screens from './screens';
 import {bootstrap} from './config/bootstrap';
-import track from './config/analytics';
+// import track from './config/analytics';
 
 bootstrap();
 
@@ -47,9 +47,9 @@ export default () => (
       const currentScreen = getCurrentRouteName(currentState);
       const prevScreen = getCurrentRouteName(prevState);
 
-      if (prevScreen !== currentScreen) {
-        track(currentScreen);
-      }
+      // if (prevScreen !== currentScreen) {
+      //   track(currentScreen);
+      // }
     }}
   />
 );
