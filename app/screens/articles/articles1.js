@@ -10,6 +10,8 @@ import {
 } from 'react-native-ui-kitten';
 import {SocialBar} from '../../components';
 import {Data} from '../../data';
+import firebase from '../../config/Firebase'
+
 let moment = require('moment');
 
 export class Articles1 extends React.Component {
@@ -19,9 +21,26 @@ export class Articles1 extends React.Component {
 
   constructor(props) {
     super(props);
-
+    this.ref = null
+    console.log("woot")
     this.data = Data.getArticles();
   }
+
+  componentDidMount() {
+    this.ref = firebase.database().ref('cheers')
+    this.ref.on('value', this.handleCheerUpdate)
+  }
+
+  componentWillUnmount() {
+    if (this.ref) {
+      this.ref.off('value', this.handleToDoUpdate);
+    }
+  }
+
+  handleCheerUpdate = (snapshot) => {
+  console.log(snapshot.val() || {})
+}
+
 
   _keyExtractor(post, index) {
     return post.id;
