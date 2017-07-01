@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1026256291494",
+    "firebase_url": "https://cheersaroundtheworld-7545d.firebaseio.com",
+    "project_id": "cheersaroundtheworld-7545d",
+    "storage_bucket": "cheersaroundtheworld-7545d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1026256291494:android:c9daf447f5ed3946",
+        "android_client_info": {
+          "package_name": "com.akveo.kittenTricks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1026256291494-p8fd24gpgabq08qmjq4n5603820qoqla.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQ01t53kMm_5cO-KegApmMLQqy_Q8gV0Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
